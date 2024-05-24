@@ -53,6 +53,26 @@ section{
     margin: 12px 0;
 }
 
+/* FOOTER */
+
+.box-footer{
+    min-height: 200px;
+    border: 1px dashed black;
+}
+
+.box-copyright {
+    background-color: rgb(123, 235, 255);
+}
+
+.dark{
+    background-color:#3A546D;
+    padding: 20px;
+}
+
+#bottombar{
+    background-color: #2C3E50;
+}
+
 /* RESPONSIVE */
 
 @media all and (max-width: 565px){
