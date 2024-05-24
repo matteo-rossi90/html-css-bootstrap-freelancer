@@ -1,1 +1,76 @@
-/* FOGLIO DI STILE PRINCIPALE */
+debug/* FOGLIO DI STILE PRINCIPALE */
+
+/* regole generiche */
+.container {
+    border: 1px dashed red;
+    height: 100%;
+}
+
+/* HEADER */
+/* debug */
+#navbar{
+    background-color: #2C3E50;
+    height: 80px;
+}
+
+.col{
+    border: 1px rgb(255, 255, 255) dashed;
+}
+
+.box{
+    height: 40px;
+    margin: 20px 0;
+}
+
+#box-nav{
+    background-color: brown;
+}
+
+.box-text{
+    background-color: rgb(253, 255, 123);
+}
+
+/* jumbotron */
+/* debug */
+
+section{
+    height: 400px;
+}
+.green-section{
+    background-color: #1ABC9C;
+}
+
+.col-12{
+    background-color:blanchedalmond;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 565px){
+
+    /* scomparsa elenco */
+
+    #box-nav{
+        display: none;
+    }
+
+
+}
+
+@media all and (min-width: 566px){
+
+    /* comparsa barra di navigazione a lato in alto */
+
+    #box-nav ul li {
+        display: flex;
+    }
+
+    /* scomparsa dell'hamburger */
+
+    #hamburger{
+        display: none;
+    }
+
+
+}
+
