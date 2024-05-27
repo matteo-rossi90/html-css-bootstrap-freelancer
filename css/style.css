@@ -137,6 +137,7 @@ i .fa-star{
 
 .card{
     position: relative;
+    cursor: pointer;
 }
 
 .card .fa-plus{
@@ -181,6 +182,10 @@ textarea{
 .btn-success{
     background-color: #1ABC9C;
     border: none;
+}
+
+.form-control{
+    border-radius: 0;
 }
 
 /* FOOTER */
@@ -228,6 +233,7 @@ textarea{
 }
 
 .title-footer{
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -272,12 +278,6 @@ textarea{
     .box-title h4,
     .box-main h4{
         font-size: 20px;
-    }
-
-    /* riduzione carattere informazioni footer */
-
-    .title-footer {
-        font-size: 18px;
     }
 
 }
