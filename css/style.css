@@ -26,7 +26,7 @@ section{
 }
 
 /* HEADER */
-/* debug */
+
 header{
     background-color: #2C3E50;
 }
@@ -50,6 +50,7 @@ header .nav-link{
     font-weight: 700;
 }
 
+/* funzione hover nella barra di navigazione in alto */
 header .nav-item:hover a {
     color: #1ABC9C;
 }
@@ -68,7 +69,7 @@ header .nav-item:hover a {
 
 /* PARTE CENTRALE */
 /* jumbotron */
-/* debug */
+
 
 main{
     padding-top: 30px;
@@ -149,6 +150,7 @@ i .fa-star{
     display: none;
 }
 
+/* funzione hover nelle cards */
 .card:hover .fa-plus{
     display:inline-block;
 }
