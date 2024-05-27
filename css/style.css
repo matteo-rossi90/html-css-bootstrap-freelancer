@@ -1,109 +1,237 @@
-debug/* FOGLIO DI STILE PRINCIPALE */
+/* FOGLIO DI STILE PRINCIPALE */
+
 
 /* regole generiche */
-.container {
-    border: 1px dashed red;
+*{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+}
+
+.container-md{
     height: 100%;
 }
 
+.container-tiny{
+    width: 80%;
+    margin: 0 auto;
+}
+
 section{
-    padding: 20px;
+    padding: 25px;
+}
+
+.green-section,
+#dark{
+    color: white;
+}
+
+header .nav-link,
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header .nav-item:hover a{
+    color: #1ABC9C;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-toggler > span{
+    color: rgb(184, 184, 184);
+}
+
+.navbar-toggler{
+    border: 1px solid rgb(184, 184, 184);
 }
 
 /* HEADER */
 /* debug */
-#navbar{
+header{
     background-color: #2C3E50;
-    height: 80px;
 }
 
 .col{
-    border: 1px rgb(255, 255, 255) dashed;
+    margin: 5px 0;
 }
 
-.box-header{
-    height: 40px;
-    margin: 20px 0;
-}
-
-#box-nav{
-    background-color: brown;
-}
-
-.box-text{
-    background-color: rgb(253, 255, 123);
-}
-
+/* PARTE CENTRALE */
 /* jumbotron */
 /* debug */
 
+main{
+    padding-top: 30px;
+}
 
 .green-section{
     background-color: #1ABC9C;
 }
 
-.box-main{
-    min-height: 300px;
-    border: 1px dashed black;
+.box-jumbo,
+.box-main,
+.box-card{
+    margin: 10px 0;
+
 }
 
-.box-title{
-    background-color: violet;
-    min-height: 100px;
+.box-jumbo img{
+    max-width: 55%;
+    padding: 10px 0;
+}
+
+.box-jumbo h1,
+h2{
+    font-weight: 700;
+}
+
+/* separatore con stella jumbotron */
+.bar{
+    height: 4px;
+    border-radius: 50px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.bar-white{
+    background-color: white;
+}
+
+.col-star{
+    max-width: 40%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.col-star,
+.col-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i .fa-star{
+    font-size: 20px;
+}
+
+.col h3{
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+/* portfolio e cards */
+.box-title,
+.card{
     margin: 12px 0;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+/* separatore portfolio */
+
+.bar-black{
+    background-color: black;
+}
+
+/* about */
+
+.box-text p{
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* contact */
+
+textarea{
+    width: 100%;
 }
 
 /* FOOTER */
 
-.box-footer{
-    min-height: 200px;
-    border: 1px dashed black;
-}
-
-.box-copyright {
-    background-color: rgb(123, 235, 255);
-}
-
-.dark{
+#dark{
     background-color:#3A546D;
-    padding: 20px;
 }
 
 #bottombar{
     background-color: #2C3E50;
+    padding: 35px;
 }
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.circle{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.box-circle{
+    height: 50px;
+    width: 50px;
+    margin: 0 2px;
+}
+
+.circle > i{
+    line-height: 50px;
+    font-size: 25px;
+}
+
+#start{
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+#copyright{
+    color: white;
+}
+
 
 /* RESPONSIVE */
 
-@media all and (max-width: 565px){
+/* visualizzazione per desktop */
+@media all and (min-width: 992px){
 
-    /* scomparsa elenco */
-
-    #box-nav{
-        display: none;
+    .container-md{
+        max-width: 960px;
     }
-
-    /* cards */
-
-
-
 
 }
 
-@media all and (min-width: 566px){
+/* visualizzazione tablet */
 
-    /* comparsa barra di navigazione a lato in alto */
+@media all and (min-width: 768px){
 
-    #box-nav ul li {
-        display: flex;
+    /* regolazione immagine avatar jumbotron */
+
+    .box-jumbo img{
+        max-width: 25%;
     }
 
-    /* scomparsa dell'hamburger */
-
-    #hamburger{
-        display: none;
+    /* ingrandimento carattere intestazione jumbotron e intestazioni corpo */
+    h1 {
+        font-size: 45px;
     }
 
+    h2{
+        font-size: 40px;
+    }
+
+    .col h3,
+    .box-title h4,
+    .box-main h4{
+        font-size: 20px;
+    }
 
 }
-
