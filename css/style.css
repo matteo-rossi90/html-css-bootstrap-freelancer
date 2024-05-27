@@ -25,32 +25,6 @@ section{
     color: white;
 }
 
-header .nav-link,
-.navbar-brand{
-    color: white;
-}
-
-.navbar-brand{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-header .nav-item:hover a{
-    color: #1ABC9C;
-}
-
-.navbar-brand:hover{
-    color: white;
-}
-
-.navbar-toggler > span{
-    color: rgb(184, 184, 184);
-}
-
-.navbar-toggler{
-    border: 1px solid rgb(184, 184, 184);
-}
-
 /* HEADER */
 /* debug */
 header{
@@ -59,6 +33,37 @@ header{
 
 .col{
     margin: 5px 0;
+}
+
+header .nav-link,
+.navbar-brand {
+    color: white;
+}
+
+header .nav-link{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header .nav-item:hover a {
+    color: #1ABC9C;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-toggler>span {
+    color: rgb(184, 184, 184);
+}
+
+.navbar-toggler {
+    border: 1px solid rgb(184, 184, 184);
 }
 
 /* PARTE CENTRALE */
@@ -74,8 +79,7 @@ main{
 }
 
 .box-jumbo,
-.box-main,
-.box-card{
+.box-main{
     margin: 10px 0;
 
 }
@@ -131,7 +135,26 @@ i .fa-star{
 }
 
 .card{
-    border-radius: 10px;
+    position: relative;
+}
+
+.card .fa-plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 80px;
+    font-weight: 900;
+    display: none;
+}
+
+.card:hover .fa-plus{
+    display:inline-block;
+}
+
+.card:hover img{
+    filter:contrast(0.4) sepia(100%) hue-rotate(90deg);
 }
 
 /* separatore portfolio */
@@ -202,6 +225,16 @@ textarea{
     color: white;
 }
 
+.title-footer{
+    font-weight: 700;
+}
+
+.title-footer,
+.paragraph-footer,
+#social{
+    padding: 5px;
+}
+
 
 /* RESPONSIVE */
 
@@ -237,6 +270,12 @@ textarea{
     .box-title h4,
     .box-main h4{
         font-size: 20px;
+    }
+
+    /* riduzione carattere informazioni footer */
+
+    .title-footer {
+        font-size: 18px;
     }
 
 }
